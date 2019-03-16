@@ -73,5 +73,5 @@ config :demo, Demo.Repo,
   username: "postgres",
   password: "postgres",
   database: "demo_dev",
-  hostname: "localhost",
+  hostname: "db",
   pool_size: 10
