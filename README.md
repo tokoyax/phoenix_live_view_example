@@ -1,3 +1,10 @@
+```
+docker-compose build
+docker-compose run web mix deps.get
+docker-compsoe up -d
+docker-compose exec web bash -c "mix ecto.create && mix ecto.migrate"
+```
+
 # Demo
 
 To start your Phoenix server:
