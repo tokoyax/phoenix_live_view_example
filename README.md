@@ -1,7 +1,8 @@
 ```
 docker-compose build
 docker-compose run web mix deps.get
-docker-compsoe up -d
+docker-compose run web bash -c "cd assets && npm install"
+docker-compose up -d
 docker-compose exec web bash -c "mix ecto.create && mix ecto.migrate"
 ```
 
